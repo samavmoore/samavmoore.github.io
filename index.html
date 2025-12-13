@@ -67,8 +67,9 @@
                     <name>Sam Moore</name>
                   </p>
                   <p style="text-align:center;color:black;font: size +1px;">
-                    PhD Candidate, ME</a> <br>
-                    AI Scientist, Roboticist, Dynamicist<br> 
+                    Robotics + Dynamics + Learning + Optimization <br>
+                     <br>
+                    PhD Candidate</a> <br>
                     Duke University <br>
                     sam.a.moore@duke.edu <br>
                   <p style=' font-size:medium;'>
@@ -79,11 +80,11 @@
                       href="http://boyuanchen.com/">Boyuan Chen</a>. 
                       
                       <br><br>
-                      Prior joining the General Robotics Lab, I was a member of the Duke Dynamical Systems Lab advised by Dr. <a style='font-size:medium;'
+                      Prior to joining the General Robotics Lab, I was a member of the Duke Dynamical Systems Lab advised by Dr. <a style='font-size:medium;'
                       href="https://mems.duke.edu/faculty/brian-mann">Brian Mann</a>.
                     <br><br>
 
-                    As a PhD student, I have worked across AI, robotics, dynamical systems, and control. 
+                    As a PhD student, I have worked across AI, robotics, nonlinear dynamics/mechanics, and control. 
                     <br><br>
 
                     I completed my bachelors studies at the <a style='font-size:medium;'
@@ -112,13 +113,35 @@
             </tbody>
           </table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <p style='font-size:medium;'>
+                  I'm interested in anything robotics, dynamical systems, learning, and optimization. Recently, I've been focused on developing smooth neural surrogates for model-based reinforcement learning. I also like physiology and biomechanics, which I studied as an undergrad. 
+
+                <p style='font-size:medium;'>
+                  I like working on challenging problems that sit at the intersection of multiple fields, and I enjoy using accelerated computing (e.g., JAX), differentiable programming, and modern machine learning to tackle these problems.
+
+                <p style='font-size:medium;'>
+                  In my free time, I enjoy watching Cincinnati sports (regrettably), calisthenics/weight lifting, all things outdoors, and just hanging out with my cat, Molly. I might also be one of the only valid Kentucky and Duke fans out there.
+
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Research</heading>
+
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>News</heading>
                   <div id="newsContainer">
-                    <!-- Only the first three <p> elements will be shown initially -->
+                    Only the first three <p> elements will be shown initially
                       <p style='font-size:medium;'>[2024 Nov] I presented at the AAAI FSS for Integrated Computational Approaches for Scientific Discovery. </p>
                       <p style='font-size:medium;'>[2024 Nov] Our <a style='font-size:medium;' href="http://generalroboticslab.com/AutomatedGlobalAnalysis">work</a> on automated scientific discovery in dynamics was released. </p>
                     <p style='font-size:medium;'>[2023 Jul] Our <a style='font-size:medium;' href="https://www.sciencedirect.com/science/article/pii/S0022460X23004030">paper</a> was accepted to the Journal of Sound and Vibration</p>
@@ -126,7 +149,7 @@
                     <div id="moreNews" style="display:none;">
                     <p style='font-size:medium;'>[2022 Oct] Joined the General Robotics Lab @ Duke</p>
 
-                    <!-- Additional news items start here -->
+                    Additional news items start here
                    
                         <p style='font-size:medium;'>
                             [2022 Apr] Our <a style='font-size:medium;' href="https://arxiv.org/abs/2003.10976">paper</a> was accepted to Communications in Nonlinear Science and Numerical Simulation
@@ -159,7 +182,7 @@
             </tbody>
           </table>
 
-            <script type="text/javascript">
+            <!-- <script type="text/javascript">
             function toggleNews() {
                 var moreNews = document.getElementById("moreNews");
                 var button = document.getElementById("toggleButton");
@@ -171,57 +194,218 @@
                 button.textContent = "More";
                 }
             }
-            </script>
+            </script> -->
+
+
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Research</heading>
-                  <p style='font-size:medium;'>
-                    Part of my research centers on developing integrated computational frameworks for scientific discovery in dynamical systems, robotics, and control.
-                     I also focus on designing adaptable, whole-body-aware robots that leverage deep learning to achieve robust performance in complex, real-world environments.
+
+
+              <tr onmouseout="SNSMPC_stop()" onmouseover="SNSMPC_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='SNSMPC_pic'>
+                      <img src='images/snsmpc.png' width="190">
+                    </div>
+                    <video width="190" autoplay loop muted playsinline>
+                      <source src="images/snsmpc.mov" type="video/mp4">
+                    </video>
+                  </div>
+                  <script type="text/javascript">
+                    function SNSMPC_start() {
+                      document.getElementById('SNSMPC_pic').style.opacity = "0";
+                    }
+
+                    function SNSMPC_stop() {
+                      document.getElementById('SNSMPC_pic').style.opacity = "1";
+                    }
+                    SNSMPC_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <papertitle>Learning Legged MPC with Smooth Neural Surrogates</Embed></papertitle>
+                  <br>
+                  <strong> Sam A. Moore</strong>,
+                    Easop Lee,
+                    Boyuan Chen
+                  <br>
+                  <em>2025</em>
+                  <br>
+                  <a href="papers/AutomatedGlobalAnalysis.pdf" download>preprint</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                      We introduce an architecture and likelihood function specifically designed for learning smooth neural models for nonsmooth dynamics. 
+                      These models are expressive, flexible, and provide more informative derivatives for gradient-based model predictive control through contact in legged robots.
                   </p>
                 </td>
               </tr>
-            </tbody>
-          </table>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-              <tr onmouseout="milling_stop()" onmouseover="milling_start()">
+              <tr onmouseout="SYM2REAL_stop()" onmouseover="SYM2REAL_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle;">
                   <div class="one">
-                    <div class="two" id='milling_pic'>
-                      <img src='images/simple_642.gif' width="190">
+                    <div class="two" id='SYM2REAL_pic'>
+                      <img src='images/sym2real.png' width="190">
                     </div>
-                    <img src='images/simple_642.gif' width="190">
+                    <video width="190" autoplay loop muted playsinline>
+                      <source src="images/sym2real.mov" type="video/mp4">
+                    </video>
                   </div>
                   <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
+                    function SYM2REAL_start() {
+                      document.getElementById('SYM2REAL_pic').style.opacity = "0";
                     }
 
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
+                    function SYM2REAL_stop() {
+                      document.getElementById('SYM2REAL_pic').style.opacity = "1";
                     }
-                    samurai_stop()
+                    SYM2REAL_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <papertitle>Sym2Real: Symbolic Dynamics with Residual Learning for Data-Efficient Adaptive Control</Embed></papertitle>
+                  <br>
+                    Easop Lee,
+                  <strong> Sam A. Moore</strong>,
+                    Boyuan Chen
+                  <br>
+                  <em>2025</em>
+                  <br>
+                  <a href="http://generalroboticslab.com/Sym2Real">project page</a>
+                  <a href="https://arxiv.org/abs/2509.15412">paper</a>
+                  <a href="https://github.com/generalroboticslab/sym2real">code</a>
+                  <a href="https://youtu.be/KAfbwpL0qiM?si=okKcxbHK1qAuVhAx">youtube</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                      Using only about 10 trajectories, we achieve robust control of both a quadrotor and a racecar in the real world, without expert knowledge or simulation tuning.
+                  </p>
+                </td>
+              </tr>
+
+
+                <tr onmouseout="LAPP_stop()" onmouseover="LAPP_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='LAPP_pic'>
+                      <img src='images/LAPP.jpg' width="190">
+                    </div>
+                    <video width="190" autoplay loop muted playsinline>
+                      <source src="images/LAPP.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <script type="text/javascript">
+                    function LAPP_start() {
+                      document.getElementById('LAPP_pic').style.opacity = "0";
+                    }
+
+                    function LAPP_stop() {
+                      document.getElementById('LAPP_pic').style.opacity = "1";
+                    }
+                    LAPP_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <papertitle>LAPP: Large Language Model Feedback for Preference-Driven Reinforcement Learning</Embed></papertitle>
+                  <br>
+                    Pingcheng Jian, 
+                    Xiao Wei,
+                    Yanbaihui Liu,
+                  <strong> Sam A. Moore</strong>,
+                    Michael P. Zavlanos,
+                    Boyuan Chen
+                  <br>
+                  <em>Transactions on Machine Learning Research (TMLR), 2025</em>
+                  <br>
+                  <a href="http://www.generalroboticslab.com/LAPP">project page</a>
+                  <a href="https://arxiv.org/abs/2504.15472">paper</a>
+                  <a href="https://github.com/generalroboticslab/LAPP">code</a>
+                  <a href="https://www.youtube.com/watch?v=GQSvJMfbaXY">youtube</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                      Here, we use LLMs to replace human feedback in preference-based reinforcement learning. Our method, Large Language Model Assisted Preference Prediction (LAPP), leverages LLMs to generate feedback on agent behaviors, enabling efficient policy learning, and behavior shaping without explicit reward engineering.
+                  </p>
+                </td>
+              </tr>
+
+              <tr onmouseout="SVSM_stop()" onmouseover="SVSM_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle;">
+                <div class="one">
+                    <div class="two" id='SVSM_pic'>
+                      <img src='images/SVSM.png' width="190">
+                    </div>
+                    <video width="190" autoplay loop muted playsinline>
+                      <source src="images/SVSM.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <script type="text/javascript">
+                    function SVSM_start() {
+                      document.getElementById('SVSM_pic').style.opacity = "0";
+                    }
+
+                    function SVSM_stop() {
+                      document.getElementById('SVSM_pic').style.opacity = "1";
+                    }
+                    SVSM_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <papertitle>Semantic Visual Self-Modeling for Whole-Body Awareness in Legged Robots</Embed></papertitle>
+                  <br>
+                  <strong> Sam A. Moore</strong>,
+                    Easop Lee,
+                    Boyuan Chen
+                  <br>
+                  <em>2024</em>
+                  <br>
+                  <a href="https://github.com/samavmoore/SemanticSelfModel">code</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                      In this project, we developed learned 3D models of a legged robot's body to instill whole-body awareness for downstream planning or world models. I hope to soon combine this work with my ongoing research on smooth neural surrogates and control though contact.
+                  </p>
+                </td>
+            </tr>
+
+            <tr onmouseout="AGA_stop()" onmouseover="AGA_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle;">
+                <div class="one">
+                    <div class="two" id='AGA_pic'>
+                      <img src='images/simple_642.gif' width="190">
+                    </div>
+                    <video width="190" autoplay loop muted playsinline>
+                      <source src="images/double_pendulum_aga.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  <script type="text/javascript">
+                    function AGA_start() {
+                      document.getElementById('AGA_pic').style.opacity = "0";
+                    }
+
+                    function AGA_stop() {
+                      document.getElementById('AGA_pic').style.opacity = "1";
+                    }
+                    AGA_stop()
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:top">
                   <papertitle>Automated Global Analysis of Experimental Dynamics through Low-Dimensional Linear Embeddings</Embed></papertitle>
                   <br>
-                  <strong> Sam A. Moore </strong>,
+                  <strong> Sam A. Moore</strong>,
                     Brian P. Mann,
                     Boyuan Chen
                   <br>
-                  <em>Arxiv Preprint</em>
+                  <em>npj Complexity, 2025</em>
                   <br>
-                  <a href="https://arxiv.org/abs/2411.00989">paper</a>
                   <a href="http://generalroboticslab.com/AutomatedGlobalAnalysis">project page</a>
+                  <a href="https://arxiv.org/abs/2411.00989">paper</a>
                   <a href="https://github.com/generalroboticslab/AutomatedGlobalAnalysis">code</a>
                   <a href="https://youtu.be/8Q5NQegHz50?si=FtEGQ1cFmvQyqIf3">youtube</a>
 
@@ -229,6 +413,89 @@
                   <p></p>
                   <p>
                       This work presents an end-to-end approach for discovering hidden stuctures in experimental data from dynamical systems. We simulaneously address challenges in applied dynamical systems due to mathematical modelling, nonlinearity, and high dimensionality through low-dimensional linear embeddings of nonlinear dynamics.
+                  </p>
+                </td>
+            </tr>
+
+
+
+
+            <tr onmouseout="AGA_stop()" onmouseover="AGA_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle;">
+                <div class="one">
+                    <div class="two" id='AGA_pic'>
+                      <img src='images/Task-in-the-Loop_Workflow_vertical.png' width="190">
+                    </div>
+                  </div>
+                  <script type="text/javascript">
+                    function AGA_start() {
+                      document.getElementById('AGA_pic').style.opacity = "0";
+                    }
+
+                    function AGA_stop() {
+                      document.getElementById('AGA_pic').style.opacity = "1";
+                    }
+                    AGA_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <papertitle>Differentiable Direct Collocation for Hardware-Software Co-Design</Embed></papertitle>
+                  <br>
+                  <strong> Sam A. Moore</strong>,
+                    Brian P. Mann,
+                    Boyuan Chen
+                  <br>
+                  <em>2023</em>
+                  <br>
+                  <a href="https://github.com/samavmoore/diffipopt">code</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                      This project has not been under active development for quite a while, but my original motivation was to explore how a system’s physical parameters influence the controllability, stability, maneuverability, etc.. I planned to do this by differentiating through a closed-loop controller around a nominal trajectory obtained via trajectory optimization. I developed a differentiable direct collocation library in JAX via IPOPT and implicit differentiation, then obtained some preliminary results on a simple cart-pole. 
+                  </p>
+                </td>
+              </tr>
+
+
+              <!-- </tbody>
+              <tbody id="moreResearch" style="display:none;"> -->
+
+              <tr onmouseout="AGA_stop()" onmouseover="AGA_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='AGA_pic'>
+                      <img src='images/MACs.png' width="190">
+                    </div>
+                    <img src='images/MACs.png' width="190">
+                  </div>
+                  <!-- <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop() -->
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <papertitle>Comparison of Data-Driven Methods on Discovering the Dynamics of the Unforced Multi-axis Cart System</Embed></papertitle>
+                  <br>
+
+                    Hunter R. Kramer,
+                    <strong> Sam A. Moore</strong>,
+                    Boyuan Chen
+                  <br>
+                  <em>International Modal Analysis Conference, 2024</em>
+                  <br>
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-031-68901-7_16">paper</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                      This work compares various data-driven methods for uncovering the dynamics of the unforced multi-axis cart system, which is particularly interesting as it can be configured as either a linear or nonlinear system.
                   </p>
                 </td>
               </tr>
@@ -313,23 +580,15 @@
               </tr>
 
 
-              <tr onmouseout="super_hop_stop()" onmouseover="super_hop_start()">
+
                 <td style="padding:20px;width:25%;vertical-align:middle;">
                   <div class="one">
                     <div class="two" id='super_hop_pic'>
-                      <img src='images/supervised_hop.png' width="160">
+                      <img src='images/supervised_hop.png' width="190">
                     </div>
-                    <img src='images/supervised_hop.png' width="160">
+                    <img src='images/supervised_hop.png' width="190">
                   </div>
                   <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:top">
@@ -343,7 +602,7 @@
                   Dean Culver,
                   Brian P. Mann
                   <br>
-                  <em>International Modal Analysis Conference</em>, 2021
+                  <em>International Modal Analysis Conference</em>, 2022
                   <br>
                   <a href="https://link.springer.com/chapter/10.1007/978-3-031-04086-3_26">paper</a>
                   <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
@@ -357,23 +616,14 @@
                 </td>
               </tr>
 
-              <tr onmouseout="hop_stop()" onmouseover="hop_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle;">
                   <div class="one">
                     <div class="two" id='hop_pic'>
-                      <img src='images/hop_track.png' width="160">
+                      <img src='images/hop_track.png' width="190">
                     </div>
-                    <img src='images/hop_track.png' width="160">
+                    <img src='images/hop_track.png' width="190">
                   </div>
                   <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
                   </script>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:top">
@@ -402,6 +652,28 @@
               </tr>
 
           </table>
+
+          <!-- <div style="text-align:center; margin-top:10px;">
+            <button id="toggleResearchButton" onclick="toggleResearch()">See More</button>
+          </div>
+
+          <script>
+            function toggleResearch() {
+              const section = document.getElementById("moreResearch");
+              const btn = document.getElementById("toggleResearchButton");
+
+              if (section.style.display === "none") {
+                section.style.display = "table-row-group";
+                btn.textContent = "See Less";
+              } else {
+                section.style.display = "none";
+                btn.textContent = "See More";
+                window.scrollTo({ top: document.getElementById("researchTable").offsetTop - 50, behavior: "smooth" });
+              }
+            }
+          </script> -->
+
+
 
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
