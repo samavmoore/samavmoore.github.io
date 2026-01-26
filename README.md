@@ -1,4 +1,4 @@
-# [silvery107.github.io](https://silvery107.github.io/)
+# [samavmoore.github.io](https://samavmoore.github.io/)
 
 Welcome! This is my personal academic website built with Jekyll and hosted on GitHub Pages. It features a modern, responsive design with dynamic elements including dark mode, image zooming, animated background, and automatic last-updated timestamps.
 
