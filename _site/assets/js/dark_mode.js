@@ -1,1 +1,0 @@
-DarkReader.setFetchMethod(window.fetch);
