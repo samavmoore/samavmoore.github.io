@@ -49,6 +49,32 @@ layout: default
 <h1 id="project">Research</h1>
 {% include projects.html %}
 
+<script>
+  const MAX_VISIBLE = 5;
+
+  const rows = document.querySelectorAll(".projects tr");
+  const toggle = document.getElementById("projects-toggle");
+
+  let expanded = false;
+
+  function updateVisibility() {
+    rows.forEach((row, i) => {
+      row.style.display = (!expanded && i >= MAX_VISIBLE) ? "none" : "";
+    });
+    toggle.textContent = expanded ? "Less research" : "More research";
+  }
+
+  toggle.onclick = () => {
+    expanded = !expanded;
+    updateVisibility();
+  };
+
+  // Initial state
+  updateVisibility();
+</script>
+
+
+
 <!-- Let's keep Publications and Patents adjacent  -->
 <!-- <h1 id="publication">Publications</h1> -->
 <!-- include publications.html -->
